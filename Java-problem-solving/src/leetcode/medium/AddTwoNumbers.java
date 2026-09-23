@@ -59,7 +59,6 @@ public class AddTwoNumbers {
                 list2 = list2.next;
             }
 
-
         }
 
         return dummy.next;

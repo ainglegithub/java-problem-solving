@@ -18,7 +18,7 @@ public class LargestNumber {
 
         //2
         Arrays.sort(arr);
-        System.out.println("Largest : " + arr[arr.length -1]);
+        System.out.println("Largest : " + arr[arr.length - 1]);
 
     }
 

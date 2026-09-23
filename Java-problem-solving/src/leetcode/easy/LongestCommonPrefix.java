@@ -13,7 +13,7 @@ public class LongestCommonPrefix {
         System.out.println("LongestCommonPrefix: " + result);
     }
 
-        public static String longestCommonPrefix(String[] strs) {
+    public static String longestCommonPrefix(String[] strs) {
         if (strs == null || strs.length == 0) {
             return "";
         }

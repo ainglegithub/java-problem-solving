@@ -19,11 +19,10 @@ public class ValidParentheses {
             return false;
         }
         Stack<Character> stack = new Stack<>();
-        for(char ch : str.toCharArray()){
-            if(ch == '(' || ch == '['  || ch == '{' ){
+        for (char ch : str.toCharArray()) {
+            if (ch == '(' || ch == '[' || ch == '{') {
                 stack.push(ch);
-            }
-            else{
+            } else {
                 if (stack.isEmpty()) {
                     return false;
                 }

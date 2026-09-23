@@ -1,4 +1,5 @@
 package leetcode.easy;
+
 // **Output:**
 //Merged List: 1 1 2 3 4 4
 class Node {
@@ -73,38 +74,38 @@ public class MergeSortedList {
 /**
  * Definition for singly-linked list.
  * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * int val;
+ * ListNode next;
+ * ListNode() {}
+ * ListNode(int val) { this.val = val; }
+ * ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
-
-class Solution {
-    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        ListNode dummy = new ListNode(0);
-        ListNode current = dummy;
-
-        while (list1 != null && list2 != null) {
-
-            if (list1.val  <= list2.val ) {
-                current.next = list1;
-                list1 = list1.next;
-            } else {
-                current.next = list2;
-                list2 = list2.next;
-            }
-
-            current = current.next;
-        }
-
-        if (list1 != null) {
-            current.next = list1;
-        } else {
-            current.next = list2;
-        }
-
-        return dummy.next;
-    }
-}
+ * <p>
+ * class Solution {
+ * public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+ * ListNode dummy = new ListNode(0);
+ * ListNode current = dummy;
+ * <p>
+ * while (list1 != null && list2 != null) {
+ * <p>
+ * if (list1.val  <= list2.val ) {
+ * current.next = list1;
+ * list1 = list1.next;
+ * } else {
+ * current.next = list2;
+ * list2 = list2.next;
+ * }
+ * <p>
+ * current = current.next;
+ * }
+ * <p>
+ * if (list1 != null) {
+ * current.next = list1;
+ * } else {
+ * current.next = list2;
+ * }
+ * <p>
+ * return dummy.next;
+ * }
+ * }
  */
